@@ -11,6 +11,15 @@
 	<div th:text="${session.userId}"></div>
 	<a th:href="@{/loginOnSession}">ログイン</a>
 	<a th:href="@{/logout}">ログアウト</a>
+<br> 
+<a th:href="@{/items/findAll}">全件検索</a> 
+
+<a th:href="@{/items/findAllByOrderByPriceDesc}">並び替え検索</a>
+<a th:href="@{/items/getReferenceById/3}">主キー検索(3)</a> 
+<a th:href="@{/items/findByPrice/100}">価格検索(100)</a> 
+<a th:href="@{/items/findByNameAndPrice/りんご/200}"> 
+名前と価格による検索(りんごかつ 200)</a>
+<a th:href="@{/items/findByNameLike/ん}">曖昧検索(ん)</a>
 </body>
 
 </html>
