@@ -14,13 +14,10 @@ public class IndexController {
 //	public String メソッド名() { 
 //		 return　"表示したいhtmlファイルの名前；
 //		}
-
 	@RequestMapping("/before") 
 	public String before() { 
 	 return "before"; 
 	}
-
-	 
 	@RequestMapping("/after") 
 	public String after() { 
 	 return "after"; 
@@ -38,5 +35,6 @@ public class IndexController {
 	public String indexRedirect() { 
 	 return "redirect:/"; 
 	}
+
 
 }
